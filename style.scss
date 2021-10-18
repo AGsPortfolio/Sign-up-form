@@ -1,26 +1,31 @@
-// ## Colors
+// Colors
 
-// ### Primary
+$primary-red: hsl(0, 100%, 74%);
+$primary-green: hsl(154, 59%, 51%); 
+$accent: hsl(248, 32%, 49%);
+$neutral-dark-blue: hsl(249, 10%, 26%);
+$neutral-grayish-blue: hsl(246, 25%, 77%);  
 
-// - Red: hsl(0, 100%, 74%) 
-// - Green: hsl(154, 59%, 51%)
+body {
+    font-family: 'Poppins', sans-serif;
+    // - Weights: 400, 500, 600, 700
+    font-size: 16px;
+    background-color: $primary-red;
+}
 
-// ### Accent
+@media screen 
+and (min-width: 320px)
+and (max-width: 480px) {
+    body {
+        background-image: url("/bg-intro-mobile.png");
+    }
+    
+    .Sign-up {
+        display: grid;
+        grid-template-rows: 300px 300px;
 
-// - Blue: hsl(248, 32%, 49%)
-
-// ### Neutral
-
-// - Dark Blue: hsl(249, 10%, 26%) 
-// - Grayish Blue: hsl(246, 25%, 77%)
-
-// ## Typography
-
-// ### Body Copy
-
-// - Font size: 16px
-
-// ### Font
-
-// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-// - Weights: 400, 500, 600, 700
+        .Signup-form {
+            width: 300px;
+        }
+    }
+}

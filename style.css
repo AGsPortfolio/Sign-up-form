@@ -1,3 +1,21 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #ff7a7a;
+}
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-image: url("/bg-intro-mobile.png");
+  }
+
+  .Sign-up {
+    display: grid;
+    grid-template-rows: 300px 300px;
+  }
+  .Sign-up .Signup-form {
+    width: 300px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
