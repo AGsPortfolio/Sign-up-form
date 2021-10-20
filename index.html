@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="form-validation.js"></script>
   <title>Sign up form</title>
 
 </head>
@@ -20,12 +21,21 @@
 
     <section class="Try-it">
       <h4 id="try-it">Try it free 7 days then $20/mo. thereafter</h4>
-      <form class="Signup-form">
-        <input type="text" id="first-name" placeholder="First Name">   
-        <input type="text" id="last-name" placeholder="Last Name">   
-        <input type="text" id="email-address" placeholder="Email Address">   
-        <input type="text" id="password" placeholder="Password">   
+
+      <form class="Signup-form" name="signUpForm" action="">
+        <input type="text" id="first-name" name="firstName" placeholder="First Name" autofocus>   
+        <input type="text" id="last-name" name="lastName" placeholder="Last Name">   
+        <input type="text" id="email-address" name="emailAddress" placeholder="Email Address">   
+        <input type="text" id="password" name="password" placeholder="Password">   
       </form>
+
+      <button type="button" id="button"
+      onclick="firstNameValidation(document.signUpForm.firstName), 
+              lastNameValidation(document.signUpForm.lastName),
+              emailValidation(document.signUpForm.emailAddress),
+              passwordValidation(document.signUpForm.password)">
+      Claim password</button>
+
       <h4 id="claim">Claim your free trial </h4>
       <p>By clicking the button, you are agreeing to our Terms and Services</p>
     </section>
