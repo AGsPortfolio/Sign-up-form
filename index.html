@@ -23,10 +23,26 @@
       <h4 id="try-it">Try it free 7 days then $20/mo. thereafter</h4>
 
       <form class="Signup-form" name="signUpForm" action="">
-        <input type="text" id="first-name" name="firstName" placeholder="First Name" autofocus> 
-        <input type="text" id="last-name" name="lastName" placeholder="Last Name">   
-        <input type="text" id="email-address" name="emailAddress" placeholder="Email Address">   
-        <input type="text" id="password" name="password" placeholder="Password">   
+        <div class="iconInside">
+          <input type="text" id="first-name" name="firstName" placeholder="First Name"autofocus> 
+          <ion-icon class="errorIcon" name="alert-circle"></ion-icon>
+          <p id="firstNameMessage">Please enter a valid first name</p>  
+        </div>
+        <div class="iconInside">
+          <input type="text" id="last-name" name="lastName" placeholder="Last Name">   
+          <ion-icon class="errorIcon" name="alert-circle"></ion-icon>
+          <p id="lastNameMessage">Please enter a valid last name</p>
+        </div>
+        <div class="iconInside">
+          <input type="text" id="email-address" name="emailAddress" placeholder="Email Address">   
+          <ion-icon class="errorIcon" name="alert-circle"></ion-icon>
+          <p id="emailMessage">Please enter a valid email address</p>
+        </div>
+        <div class="iconInside">
+          <input type="text" id="password" name="password" placeholder="Password">   
+          <ion-icon class="errorIcon" name="alert-circle"></ion-icon>
+          <p id="passwordMessage">Password must contain 8 to 14 char. with a number and a special character (!@#$%^&*)</p>
+        </div>
       </form>
 
       <button type="button" id="button"
@@ -47,5 +63,9 @@
       Coded by <a href="https://github.com/AGsPortfolio" target="blank">André Goossens</a>.
     </p>
   </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
