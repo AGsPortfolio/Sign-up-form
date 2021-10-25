@@ -8,19 +8,47 @@ $neutral-grayish-blue: hsl(246, 25%, 77%);
 
 body {
     font-family: 'Poppins', sans-serif;
-    // - Weights: 400, 500, 600, 700
+    // - Weights: 200, 500, 600, 700
     font-size: 16px;
     background-color: $primary-red;
+    text-align: center;
+}
+    
+.Text-block {
+    color: white;
+    
+    h1 {
+        font-size: 175%;
+    }
+    
+    h1 > p {
+        padding: 0% 8% 0% 8%;
+    }
 }
 
-form {
-    p {
+#try-it {
+    background-color: $accent;
+    color: white;
+    border-radius: 10px;
+    padding: 7% 15%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-weight: 200;
+}
+
+.Signup-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 7% 4%;
+    margin: 0% 4%;
+
+    div > p {
         visibility: hidden;
     }
 
     input {
-        width: 275px;
-        height: 30px;
+        // width: 275px;
+        // height: 30px;
         border-radius: 5px;
         border-style: none;
     }

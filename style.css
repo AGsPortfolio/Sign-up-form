@@ -2,21 +2,46 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: #ff7a7a;
+  text-align: center;
 }
 
-form p {
+.Text-block {
+  color: white;
+}
+.Text-block h1 {
+  font-size: 175%;
+}
+.Text-block h1 > p {
+  padding: 0% 8% 0% 8%;
+}
+
+#try-it {
+  background-color: #6055a5;
+  color: white;
+  border-radius: 10px;
+  padding: 7% 15%;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-weight: 200;
+}
+
+.Signup-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 7% 4%;
+  margin: 0% 4%;
+}
+.Signup-form div > p {
   visibility: hidden;
 }
-form input {
-  width: 275px;
-  height: 30px;
+.Signup-form input {
   border-radius: 5px;
   border-style: none;
 }
-form .iconInside {
+.Signup-form .iconInside {
   position: relative;
 }
-form .iconInside ion-icon {
+.Signup-form .iconInside ion-icon {
   position: absolute;
   left: 240px;
   padding: 5px 10px 0px 0px;
