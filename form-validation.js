@@ -6,10 +6,12 @@ function firstNameValidation (first) {
     }
     if(first.value == "") {
         document.getElementById('firstNameMessage').style="visibility:visible";
+        document.getElementById('error1').style="visibility:visible";
         return false;
     }
     else {
         document.getElementById('firstNameMessage').style="visibility:visible"
+        document.getElementById('error1').style="visibility:visible";
         return false;
     }
 }
@@ -22,10 +24,12 @@ function lastNameValidation (last) {
     }
     if(last.value == "") {
         document.getElementById('lastNameMessage').style="visibility:visible";
+        document.getElementById('error2').style="visibility:visible";
         return false;
     }
     else {
         document.getElementById('lastNameMessage').style="visibility:visible";
+        document.getElementById('error2').style="visibility:visible";
         return false;
     }
 }
@@ -38,10 +42,12 @@ function emailValidation (email) {
     }
     if(email.value == "") {
         document.getElementById('emailMessage').style="visibility:visible";
+        document.getElementById('error3').style="visibility:visible";
         return false;
     }
     else {
         document.getElementById('emailMessage').style="visibility:visible";
+        document.getElementById('error3').style="visibility:visible";
         return false;
     }
 }
@@ -54,10 +60,12 @@ function passwordValidation (password) {
     }
     if (password.value == "") {
         document.getElementById('passwordMessage').style="visibility:visible";
+        document.getElementById('error4').style="visibility:visible";
         return false;
     }
     else {
         document.getElementById('passwordMessage').style="visibility:visible";
+        document.getElementById('error4').style="visibility:visible";
         return false;
     }    
 }
