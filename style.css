@@ -48,7 +48,7 @@ body {
   height: 50px;
   border-radius: 5px;
   padding-left: 5%;
-  border: 0.5px solid #3e3c49;
+  border: 1px solid #3e3c49;
   opacity: 0.7;
 }
 .Signup-form div > p {
@@ -81,6 +81,10 @@ body {
   border-radius: 5px;
   font-size: 90%;
   letter-spacing: 2px;
+  cursor: pointer;
+}
+.Signup-form #button:hover {
+  border-bottom: 4px solid #38cc8c;
 }
 .Signup-form .Terms {
   color: #b9b6d3;
@@ -97,9 +101,9 @@ footer {
   color: white;
 }
 
-@media screen and (min-width: 320px) and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 799px) {
   body {
-    background-image: url("/bg-intro-mobile.png");
+    background-image: url("bg-intro-mobile.png");
   }
 
   .Sign-up {
@@ -110,9 +114,9 @@ footer {
     width: 84%;
   }
 }
-@media screen and (min-width: 799px) and (max-width: 1112px) {
+@media screen and (min-width: 800px) and (max-width: 1112px) {
   body {
-    background-image: url("/bg-intro-desktop.png");
+    background-image: url("bg-intro-desktop.png");
     text-align: left;
   }
 
@@ -152,7 +156,7 @@ footer {
 }
 @media screen and (min-width: 1113px) and (max-width: 1500px) {
   body {
-    background-image: url("/bg-intro-desktop.png");
+    background-image: url("bg-intro-desktop.png");
     text-align: left;
   }
 

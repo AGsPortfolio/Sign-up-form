@@ -5,11 +5,13 @@ function firstNameValidation (first) {
         return true;
     }
     if(first.value == "") {
+        document.getElementById('first-name').style="border: 1px solid hsl(0, 100%, 74%)";
         document.getElementById('firstNameMessage').style="visibility:visible";
         document.getElementById('error1').style="visibility:visible";
         return false;
     }
     else {
+        document.getElementById('first-name').style="border: 1px solid hsl(0, 100%, 74%)"
         document.getElementById('firstNameMessage').style="visibility:visible"
         document.getElementById('error1').style="visibility:visible";
         return false;
@@ -23,11 +25,13 @@ function lastNameValidation (last) {
         return true;
     }
     if(last.value == "") {
+        document.getElementById('last-name').style="border: 1px solid hsl(0, 100%, 74%)"
         document.getElementById('lastNameMessage').style="visibility:visible";
         document.getElementById('error2').style="visibility:visible";
         return false;
     }
     else {
+        document.getElementById('last-name').style="border: 1px solid hsl(0, 100%, 74%)"
         document.getElementById('lastNameMessage').style="visibility:visible";
         document.getElementById('error2').style="visibility:visible";
         return false;
@@ -41,11 +45,13 @@ function emailValidation (email) {
         return true;  
     }
     if(email.value == "") {
+        document.getElementById('email-address').style="border: 1px solid hsl(0, 100%, 74%)"
         document.getElementById('emailMessage').style="visibility:visible";
         document.getElementById('error3').style="visibility:visible";
         return false;
     }
     else {
+        document.getElementById('email-address').style="border: 1px solid hsl(0, 100%, 74%)"
         document.getElementById('emailMessage').style="visibility:visible";
         document.getElementById('error3').style="visibility:visible";
         return false;
@@ -59,11 +65,13 @@ function passwordValidation (password) {
         return true;
     }
     if (password.value == "") {
+        document.getElementById('password').style="border: 1px solid hsl(0, 100%, 74%)"
         document.getElementById('passwordMessage').style="visibility:visible";
         document.getElementById('error4').style="visibility:visible";
         return false;
     }
     else {
+        document.getElementById('password').style="border: 1px solid hsl(0, 100%, 74%)"
         document.getElementById('passwordMessage').style="visibility:visible";
         document.getElementById('error4').style="visibility:visible";
         return false;
