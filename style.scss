@@ -10,7 +10,6 @@ body {
     font-size: 16px;
     background-color: $primary-red;
     text-align: center;
-    // margin-left: 6%;
 }
     
 .Text-block {
@@ -50,13 +49,13 @@ body {
     .iconInside ion-icon {
         font-size: 125%;
         position:absolute;
-        left:260px;
+        left:85%;
         padding-top: 5%;
         color: $primary-red;  
     }
 
     input {
-        width: 275px;
+        width: 265px;
         height: 50px;
         border-radius: 5px;
         padding-left: 5%;
@@ -70,6 +69,7 @@ body {
         color: $primary-red;
         text-align: right;
         font-size: 65%;
+        padding-right: 2%;
     }
 
     #error1 {
@@ -90,7 +90,7 @@ body {
         color: white;
         border-style: none;
         border-bottom: 4px solid hsl(154, 69%, 37%, 0.4);
-        width: 300px;
+        width: 279px;
         height: 55px;
         border-radius: 5px;
         font-size: 90%;
@@ -110,11 +110,12 @@ body {
 footer {
     padding: 2% 5% 15% 0%;
     font-size: xx-small;
+    color: white;
 }
 
 @media screen 
 and (min-width: 320px)
-and (max-width: 599px) {
+and (max-width: 800px) {
     body {
         background-image: url("/bg-intro-mobile.png");
     }
@@ -124,34 +125,110 @@ and (max-width: 599px) {
         grid-template-rows: 300px auto;
 
         .Signup-form {
-            width: 300px;
+            width: 84%;
         }
     }
 }
 
-@media screen 
-and (min-width: 600px)
-and (max-width: 1250px) {
+@media screen
+and (min-width: 799px)
+and (max-width: 1112px) {
     body {
         background-image: url("/bg-intro-desktop.png");
         text-align: left;
     }
-
+    
     .Sign-up {
         display: grid;
-        grid-template-columns: 400px 400px;
-    }
+        grid-template-columns: 50% 50%;
+        padding: 5% 5%;
+        padding-bottom: 1%;
 
-    .Text-block {
-        color: white;
-        padding-top: 30%;
-        
-        h1 {
-            font-size: 225%;
+        .Text-block {
+            color: white;
+            padding: 40% 12% 0% 10%;
+            
+            h1 {
+                font-size: 200%;
+                line-height: 40px;
+            }
+        }
+
+        #try-it {
+            text-align: center;
         }
         
-        h1 > p {
-            padding: 20% 15%;
+        .Signup-form {
+            
+            input {
+                width: 350px;
+                font-size: 95%;
+            }
+            
+            #button {
+                width: 374px;
+            }
+            
+            .Terms {
+                text-align: center;
+                font-size: 55%;
+            }
         }
+    }
+    
+    footer {
+        float: right;
+        padding:0% 10%;
+    } 
+}
+
+@media screen 
+and (min-width: 1113px)
+and (max-width: 1500px) {
+    body {
+        background-image: url("/bg-intro-desktop.png");
+        text-align: left;
+    }
+    
+    .Sign-up {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 7% 7%;
+        padding-bottom: 1%;
+        
+        .Text-block {
+            color: white;
+            padding: 27% 12% 0% 10%;
+            
+            h1 {
+                font-size: 275%;
+                line-height: 50px;
+            }
+        }
+        
+        input {
+            width: 455px;
+            font-size: 95%;
+        }
+
+        .iconInside ion-icon {
+            font-size: 145%;
+            left:85%;
+            padding-top: 3%;
+        }
+
+        #button {
+            width: 484px;
+        }
+
+        .Terms {
+            text-align: center;
+            font-size: 60%;
+        }
+    }
+    
+    footer {
+        float: right;
+        padding:0% 10%;
     }
 }
